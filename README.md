@@ -1,6 +1,6 @@
 # 🛒 Funko pop virtual shop 🛒 
 
-###### Cabeçudinho store, a store that sells funko pop dolls  🪀
+##### Cabeçudinho store, a store that sells funko pop dolls  🪀
 
 
 ![](https://raw.githubusercontent.com/kaugoncalves/FunkoPop-Virtual-Shop/main/Pag%20inicial.jpg)
