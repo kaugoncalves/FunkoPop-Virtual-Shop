@@ -11,7 +11,7 @@
 
 
 
-## Technologies 🖥️
+# Technologies 🖥️
 - Node.js
 - Marko
 - Css
