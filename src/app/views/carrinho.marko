@@ -1,0 +1,222 @@
+<html><head>
+    <title>Cabeçudinho Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    </head>
+    <!-- USANDO CSS AQUI POIS ARQUIVOS EXTERNOS NAO FUNCIONAM COM .MARKO -->
+<style>
+  body{
+    background-color: rgb(41, 41, 41); 
+    font-family: Georgia, serif;
+    color: white;
+  
+  }
+  
+  .efeito{
+  
+  border: none;
+  padding: 20px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 200ms ease;
+  
+  }
+  .animate-carrinho{
+    color: white;
+    background: none;
+    transform-style: preserve-3d;
+    
+  }
+  .animate-carrinho::after{
+    top: -100%;
+    left: 0px;
+    width:100%;
+    padding: 20px;
+    position: absolute;
+    background: greenyellow;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    content:'🛒Carrinho';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+  }
+  .animate-carrinho:hover{
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(100%);
+  }
+  
+  .animate-sair{
+    color: white;
+    background: none;
+    transform-style: preserve-3d;
+    
+  }
+  .animate-sair::after{
+    top: -100%;
+    left: 0px;
+    width:100%;
+    padding: 20px;
+    position: absolute;
+    background: red;
+    color: black;
+   
+    border-radius: 10px;
+    box-sizing: border-box;
+    content:'📴Deslogar';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+  }
+  .animate-sair:hover{
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(100%);
+  }
+  
+  
+  .animate-adicionar{
+  background: none;
+  color: rgb(37, 37, 37);
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  font-size: 12px;
+  outline: none;
+  border: 3px solid red;
+  position: relative;
+  z-index: 1;
+  }
+  .animate-adicionar:hover{
+    color: #fff;
+    cursor: pointer;
+  }
+  .animate-adicionar::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: red;
+  }
+  .animate-adicionar:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+  }
+  
+  .border-card {
+    border: solid 5px transparent;
+    transition: border-width 0.6s linear;
+    
+  }
+  
+  .border-card:hover { border-width: 10px;
+  }
+  
+  .animate-card { 
+    border: 9px solid blueviolet;
+    animation: mymove 1s infinite;
+  }
+  
+  @keyframes mymove {
+    50% {border-color: #6541A5;}
+  }
+  
+  .animate-font {  
+    width: 300px;
+    color: white;
+    animation: mymove2 1s infinite;
+  }
+  
+  @keyframes mymove2 {
+    50% {color: rgb(153, 255, 0);}
+  }
+</style>
+    
+    <body>
+    
+      <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-dark" style="height: 70px;  position: sticky; margin-top: 0px; width: 100%;">
+        <a  class="border-card" style="font-size: 20px; color:white" href="/pagInicial"> <img src="https://st2.depositphotos.com/1340907/6714/v/950/depositphotos_67149235-stock-illustration-pixel-sad-face-icon.jpg" 
+          height="35"  loading="lazy">  Cabeçudinho Store </a>
+      
+        <div class="navbar-nav ml-auto">
+          <ul class="navbar-nav">
+                 
+            
+            <li class="nav-item ml-auto">
+              <a class="nav-link " href="/carrinho" > <button class="efeito animate-carrinho" > 🛒Carrinho</button> </a>
+            </li>         
+           
+            <li class="nav-item ">
+              <a class="nav-link my-2 my-sm-0" href="/sair" >
+                <button class="btn btn-danger" class="efeito animate-sair"> 📴Deslogar </button> </a>
+            </li>                 
+          </ul>
+        </div>
+      </nav>  
+
+
+ 
+
+<div class="container m-5 pb-5 mx-auto ">
+   <for (produto in data.produtos)>   
+          <div class="row">
+              <div class="col-sm-4" >
+                <img class="animate-card" src="${produto.imgProduto}" style="width:70%; margin:10px">
+              </div>
+                  <div class="col-sm-8" style="background-color:#232931; text-align: right; padding:10px  width:10px"> 
+                  
+                    
+      
+                      <p><h1>${produto.nomeProduto}</h1> </p>
+                      <h3><a class="animate-font">R$ ${produto.precoProduto} </a> </h3>
+                      <h3>${produto.descricao}</h3> 
+                      <br>
+                      <form action="/excluiProduto/${produto.idItemComprado}">
+                       <button class="animate-adicionar">✖️Remover </button> 
+                      </form>
+
+                       <br>
+                      <input type="hidden" name="id_pedido" value="${produto.idPedido}">
+                      <input type="hidden" name="valor_produto" value="${produto.Valor_Total}">                       
+                      
+                
+                  
+                        
+                              
+                  </div>
+            </div>         
+   </for>
+    <div class="row"> 
+      <div class="col-sm-4"></div>       
+      
+       <div class="col-sm-8" style="background-color:#6541A5; text-align: right;">
+       <h3 >  Valor total: <a class="animate-font"> R$ ${data.vtotal} </a> </h3>
+
+            <form class="form-inline" action="/finalizarCompra">
+              <button class="btn btn-success " type="submit">⭐Finalizar compra⭐</button>
+              </form>
+       </div>  
+
+  
+      </div>
+
+</div>
+
+
+    
+</body>
+</html>
