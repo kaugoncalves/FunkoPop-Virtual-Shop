@@ -15,4 +15,6 @@
 - Node.js
 - Marko
 - Css
+- Express 
+- Mysql
 
