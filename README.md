@@ -11,12 +11,12 @@
 
 
 
-##Technologies 🖥️
+## Technologies 🖥️
 - Node.js
 - Marko
 - Css
 
-##Technologies 🖥️
+## Technologies 🖥️
 - Node.js
 - Marko
 - Css
