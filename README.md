@@ -1,4 +1,4 @@
-# :tw-1f4b8: Funko pop virtual shop :tw-1f4b8: 
+# 🛒 Funko pop virtual shop 🛒 
 
 ###### Cabeçudinho store, a store that sells funko pop dolls  🪀
 
