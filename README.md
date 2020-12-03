@@ -16,7 +16,3 @@
 - Marko
 - Css
 
-## Technologies 🖥️
-- Node.js
-- Marko
-- Css
