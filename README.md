@@ -9,6 +9,8 @@
 
 ![](https://github.com/kaugoncalves/FunkoPop-Virtual-Shop/blob/main/pag%20login.jpg?raw=true)
 
+![](https://github.com/kaugoncalves/FunkoPop-Virtual-Shop/blob/main/cadastro.jpg?raw=true)
+
 
 
 # Technologies 🖥️
