@@ -3,7 +3,7 @@
   🛒 Funko pop 🛒 
 </h1>
 
-<p align="center">Virtual shop</p>
+<p align="center">A store that sells funko pop dolls 🪀</p>
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/kaugoncalves/FunkoPop-Virtual-Shop">
@@ -42,7 +42,7 @@
 
 ## 👨🏻‍💻 About the project
 
-- <p style="color: red;"> Cabeçudinho store, a store that sells funko pop dolls 🪀</p>
+- <p style="color: red;"> Cabeçudinho store, </p>
 
 ## 🚀 Technologies
 
