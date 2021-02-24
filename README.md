@@ -42,7 +42,7 @@
 
 ## 👨🏻‍💻 About the project
 
-- <p style="color: red;"> Cabeçudinho store, </p>
+- <p style="color: red;"> Project made in node.js and marko for school project </p>
 
 ## 🚀 Technologies
 
