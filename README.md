@@ -1,6 +1,6 @@
 <h1 align="center">
 	<!-- <img alt="Logo" src=".github/logo.png" width="200px" /> -->
-  🛒 Funko pop 🛒 
+  🛒 Cabeçudinho store 🛒 
 </h1>
 
 <p align="center">A store that sells funko pop dolls 🪀</p>
